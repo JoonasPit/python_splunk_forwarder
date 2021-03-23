@@ -3,6 +3,8 @@ import requests
 
 data = {"test": "HelloWorld"}
 your_splunk_url = "https:splunk:port/services/collector"
+index = ""
+token = ""
 
 def post_to_splunk(data):
     requests.post(your_splunk_url, headers={'Authorization': f'Splunk {token}',
